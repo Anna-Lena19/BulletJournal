@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="8dp"
+        android:id="@+id/cardViewGoal"
+        android:background="@drawable/box_shadow_dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is the Story of my Ex"
+            android:id="@+id/setText"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/colorToDoHeadingFont"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_button"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorToDoHeadingBG"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="68dp"
+            android:id="@+id/addImage"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

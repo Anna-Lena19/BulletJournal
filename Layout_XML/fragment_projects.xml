@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+    >
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/nestedScrollView"
+    android:background="@color/colorLightGrey">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nestedScrollView">
+
+        <TextView
+            android:id="@+id/project_quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="'Belive you can and  you're halfway there.'  "
+            android:textColor="@color/colorGold"
+            android:textSize="30sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/project_quote"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="15dp">
+
+
+            <TextView
+                android:id="@+id/title_projects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGrey"
+                android:padding="10dp"
+                android:text="Projekte"
+                android:textColor="@color/colorGold"
+                android:textSize="30dp"
+                android:layout_marginBottom="40dp"
+                android:textAlignment="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/projectTaskList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_projects"
+                android:layout_weight="100"
+
+                tools:listitem="@layout/task_row" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addProjectButton"
+        android:src="@drawable/ic_add_button"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/colorLightGrey"/>
+        <!--android:gravity="bottom" android:layout_gravity="bottom"-->
+</RelativeLayout>
+
+
+
+</RelativeLayout>

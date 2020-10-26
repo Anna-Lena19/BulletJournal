@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity"
+    android:background="@color/colorLightGrey">
+
+    <!--Toolbar
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back" />
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorNavigation">
+
+    </LinearLayout>-->
+
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_arrow_back"
+        android:background="@color/colorLightGrey"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Task"
+        android:textColor="@color/colorGold"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/title_AddTask"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/colorGold"
+        android:layout_below="@+id/title_AddTask"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/subtitle_Name"/>
+
+    <EditText
+        android:id="@+id/setDescription"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:hint="What is your To Do"
+        android:textColor="@color/colorToDoHeadingFont"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/subtitle_Name"
+        app:backgroundTint="#c2c1c9"/>
+
+    <!--<EditText
+        android:id="@+id/setDateIdent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task = 0,  Note = 1,  Event = 2"
+        android:textColor="@color/colorToDoHeadingBG"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/setDescription"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setDescription"
+        android:text="Select Category"
+        android:textColor="@color/colorGold"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/subtitle_Category"/>
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtitle_Category"
+        android:id="@+id/setBulletIdent"
+        android:spinnerMode="dropdown"
+        android:entries="@array/date_identification"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/setBulletIdent"
+        android:layout_marginTop="60dp">
+
+    <Button
+        android:id="@+id/dateDeadline"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/setBulletIdent"
+        android:text="Set Date Deadline"
+        android:textColor="@color/colorGold"
+        android:background="@drawable/dark_button"/>
+
+    <TextView
+        android:id="@+id/showDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/dateDeadline"
+        android:text=""
+        android:textColor="@color/colorToDoHeadingFont"
+        />
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Speichern"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/dark_button"
+        android:textColor="@color/colorGold"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

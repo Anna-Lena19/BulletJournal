@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity"
+    android:background="@color/colorLightGrey">
+
+
+
+
+    <TextView
+        android:id="@+id/title_UpdateTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Update Projekt"
+        android:textColor="@color/colorGold"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/subtitle_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_UpdateTask"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Name"
+        android:textColor="@color/colorGold" />
+
+    <TextView
+        android:id="@+id/title_input"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtitle_Name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorToDoHeadingFont" />
+
+    <!--<EditText
+    android:id="@+id/setDateIdent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Task = 0,  Note = 1,  Event = 2"
+    android:textColor="@color/colorToDoHeadingBG"
+    android:layout_margin="20dp"
+    android:layout_below="@+id/setDescription"/>-->
+
+
+
+    <TextView
+        android:id="@+id/setDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_input"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Set Deadline"
+        android:textColor="@color/colorGold" />
+
+    <LinearLayout
+        android:id="@+id/deadline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setDeadline"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dateDeadline_input"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/dark_button"
+            android:text="Set Date Deadline"
+            android:textColor="@color/colorGold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/showDate_Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20.08.20"
+            android:textColor="@color/colorToDoHeadingFont" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deadline_layout"
+        android:layout_marginTop="180dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/update_Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/dark_button"
+            android:text="Update"
+            android:textColor="@color/colorGold" />
+
+        <Button
+            android:id="@+id/delete_Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dark_button"
+            android:text="Delete"
+            android:textColor="@color/colorGold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

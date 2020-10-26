@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/dotted_paper_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGrey"
+        android:id="@+id/mothlyToDo"><!--#6699FF-->
+
+        <!--Monthly-->
+        <RelativeLayout
+            android:id="@+id/relativlayoutMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/box_shadow_dark"
+            android:elevation="15dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/dateOfMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkGrey"
+                android:padding="10dp"
+                android:text="Date of Month"
+                android:textColor="@color/colorGold"
+                android:textSize="30dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/monthlyTaskList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateOfMonth"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="100"
+                tools:listitem="@layout/task_row" />
+
+        </RelativeLayout>
+
+
+        <!--Futurelog-->
+
+
+
+        <!--Month 1-2 -->
+        <RelativeLayout
+            android:id="@+id/relativlayoutMonth_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativlayoutMonth"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/box_shadow_dark"
+            android:elevation="15dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/dateOfMonth_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkGrey"
+                android:text="Futurelog"
+                android:textAlignment="center"
+                android:textColor="@color/colorGold"
+                android:textSize="30dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/monthlyTaskList_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateOfMonth_01"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="100"
+                tools:listitem="@layout/task_row" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

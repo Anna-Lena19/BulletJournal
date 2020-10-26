@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/colorLightGrey"
+    android:id="@+id/nestedScrollView2">
+
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_below="@+id/nestedScrollView2"
+    android:layout_margin="10dp">
+
+    <!--
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morgenroutine"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/morgenroutine"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/morgenroutine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/monrningRoutine">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_button"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorToDoHeadingBG"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/doBallett"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/switch_ballett"
+        android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Alarm"/>
+</LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/monrningRoutine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/monrningRoutine2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_options"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorToDoHeadingFont"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/doZeichnen"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/switch_zeichnen"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Alarm"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_timepicker"
+        android:text="set Alarm"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_cancle_timepicker"
+        android:text="cancle Alarm"
+        android:layout_below="@id/button_timepicker"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_channel1"
+        android:text="channel1"
+        android:layout_below="@+id/switch_ballett"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_channel2"
+        android:text="channel2"
+        android:layout_below="@id/button_channel1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notifyDate"
+        android:text="channel2 with time"
+        android:layout_below="@id/button_channel2"/>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monrningRoutine"
+        android:id="@+id/linarlayout"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobbys"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:id="@+id/hobbys"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="1. Ballett"
+            android:layout_below="@id/hobbys"
+            android:id="@+id/ballett"/>
+        -->
+
+        <!--<FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ballett"
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ballerina_white" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clip_source" />
+
+    </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >android:layout_below="@+id/frameLayout"
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_button"
+            android:id="@+id/addBallett"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:id="@+id/deleteBallett"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+  android:layout_below="@+id/linarlayout"  -->
+
+
+    <TextView
+        android:id="@+id/selfcare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Morning Routine "
+        android:textColor="@color/colorGold"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+    
+    <androidx.viewpager.widget.ViewPager
+        android:foregroundGravity="center"
+        android:id="@+id/viewPager"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/selfcare"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorDarkGrey">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Goal "
+        android:layout_below="@+id/viewPager"
+        android:textColor="@color/colorGold"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorLightGrey"
+        android:layout_below="@+id/goal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/addNewGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new Goal"
+            tools:visibility="visible"
+            android:background="@drawable/box_shadow_dark"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/recyclerview"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/colorLightGrey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"><!--#00CCFF-->
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/colorLightGrey"
+        android:id="@+id/nestedScrollView">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nestedScrollView"
+            android:layout_margin="0dp">
+
+
+            <RelativeLayout
+                android:id="@+id/dayliResult"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                ><!--android:background="@drawable/dark_square_shadow_long"-->
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:orientation="horizontal"
+                    android:clipToPadding="false"
+                    android:background="@drawable/box_shadow_dark"
+                    android:elevation="15dp"
+                    android:padding="20dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/box_shadow_light"
+                        android:elevation="15dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="8dp">
+                        <!--
+                        android:alpha="1"
+                        android:translationZ="20dp"
+                        android:outlineSpotShadowColor="@color/colorGold"
+                        android:outlineAmbientShadowColor="@color/colorGold"-->
+
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/progressbarCheckt"
+                            android:layout_centerHorizontal="true"
+                            style="@style/CircularDeterminateProgressBar"
+                            tools:progress="60" />
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/progressbarCheckt"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:shadowColor="@android:color/holo_red_dark"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            android:text="100% "
+                            android:textColor="@color/colorToDoHeadingFont"
+                            android:textSize="20dp" />
+
+                        <!--<Button
+                            android:id="@+id/button_decr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- 10%"
+                            android:layout_below="@+id/text1"/>
+                        <Button
+                            android:id="@+id/button_incr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+ 10%"
+                            android:layout_below="@+id/button_decr"/>-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="Completed"
+                            android:textColor="@color/colorToDoHeadingFont"
+                            android:textSize="18dp" />
+
+                    </RelativeLayout>
+
+
+                   <RelativeLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                       android:elevation="15dp"
+                       android:padding="5dp"
+                       android:background="@drawable/box_shadow_light">
+
+                        <TextView
+                            android:id="@+id/text12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:text="10"
+                            android:textColor="@color/colorToDoHeadingFont"
+                            android:textSize="25dp"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@+id/text12"
+                           android:layout_marginLeft="5dp"
+                           android:layout_marginTop="15dp"
+                           android:layout_marginBottom="15dp"
+                           android:text="Aufgaben gescedulet"
+                           android:textColor="@color/colorToDoHeadingFont"
+                           android:textSize="18dp" />
+
+                    </RelativeLayout>
+
+                    <!--<RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_square_shadow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100% C"
+                    android:layout_margin="15dp"
+                    android:textSize="20dp"
+                    android:id="@+id/text11"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100% T"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@+id/text11"/>
+
+            </RelativeLayout>-->
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!--<com.loopeer.shadow.ShadowView
+    android:id="@+id/shadow_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="10dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:onClick="onShadowClickTest"
+    android:padding="10dp"
+    app:cornerRadius="4dp"
+    app:shadowMargin="20dp"
+    app:shadowRadius="14dp">-->
+
+            <RelativeLayout
+                android:id="@+id/carbon_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dayliResult"
+                android:layout_margin="30dp"
+                android:background="@drawable/box_shadow_dark"
+                android:elevation="15dp"
+                android:padding="20dp"><!--android:background="@drawable/dark_square_shadow_long"    app:carbon_cornerRadius="20dp"
+        app:carbon_elevation="30dp"
+        app:carbon_elevationShadowColor="@color/carbon_amber_700"
+        app:carbon_stroke="@color/colorGold"
+        app:carbon_strokeWidth="0.5dp"-->
+
+                <TextView
+                    android:id="@+id/dateOfDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_square_shadow2"
+                    android:padding="10dp"
+                    android:text="Date of Day"
+                    android:textColor="@color/colorGold"
+                    android:textSize="30dp" />
+
+                <androidx.recyclerview.widget.RecyclerView xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/dailyTaskList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateOfDay"
+                    android:layout_margin="5dp"
+                    android:layout_weight="100"
+                    tools:listitem="@layout/task_row" />
+
+            </RelativeLayout>
+
+            <!--</com.loopeer.shadow.ShadowView>-->
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addNoteButton"
+        android:src="@drawable/ic_add_button"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/colorDarkGrey"
+        /> <!--android:layout_alignParentBottom="true" android:layout_alignParentRight="true"-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

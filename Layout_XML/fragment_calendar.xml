@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#001110">#CCCCFF
+    app:theme="@style/carbon_RelativeLayout">
+    app:carbon_elevationShadowColor="@color/colorGold"
+    <TextView
+        android:id="@+id/textViwe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendar Fragment"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Calendar Fragment"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_below="@+id/textViwe"
+
+        android:id="@+id/carbon_textView2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a Test of Shadow"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@color/colorToDoHeadingFont"
+        android:layout_below="@+id/carbon_textView2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/testShadow"/>
+
+
+
+</RelativeLayout>
